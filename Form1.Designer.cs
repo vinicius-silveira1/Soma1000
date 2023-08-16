@@ -35,10 +35,15 @@
             textBox2 = new TextBox();
             label1 = new Label();
             label2 = new Label();
+            button1 = new Button();
+            label3 = new Label();
+            panel1.SuspendLayout();
             SuspendLayout();
             // 
             // panel1
             // 
+            panel1.BackColor = Color.LightBlue;
+            panel1.Controls.Add(label3);
             panel1.Dock = DockStyle.Top;
             panel1.Location = new Point(0, 0);
             panel1.Name = "panel1";
@@ -85,30 +90,55 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new Font("Calibri", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            label1.Font = new Font("Calibri", 12F, FontStyle.Regular, GraphicsUnit.Point);
             label1.ForeColor = SystemColors.ControlDarkDark;
             label1.Location = new Point(42, 228);
             label1.Name = "label1";
-            label1.Size = new Size(51, 15);
+            label1.Size = new Size(59, 19);
             label1.TabIndex = 5;
             label1.Text = "Usuário";
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Font = new Font("Calibri", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            label2.Font = new Font("Calibri", 12F, FontStyle.Regular, GraphicsUnit.Point);
             label2.ForeColor = SystemColors.ControlDarkDark;
             label2.Location = new Point(42, 310);
             label2.Name = "label2";
-            label2.Size = new Size(40, 15);
+            label2.Size = new Size(48, 19);
             label2.TabIndex = 6;
             label2.Text = "Senha";
+            // 
+            // button1
+            // 
+            button1.BackColor = Color.SkyBlue;
+            button1.FlatStyle = FlatStyle.Flat;
+            button1.Font = new Font("Calibri", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
+            button1.ForeColor = SystemColors.Control;
+            button1.Location = new Point(105, 378);
+            button1.Name = "button1";
+            button1.Size = new Size(75, 33);
+            button1.TabIndex = 7;
+            button1.Text = "Entrar";
+            button1.UseVisualStyleBackColor = false;
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Font = new Font("Brush Script MT", 36F, FontStyle.Italic, GraphicsUnit.Point);
+            label3.ForeColor = SystemColors.ControlDarkDark;
+            label3.Location = new Point(43, 79);
+            label3.Name = "label3";
+            label3.Size = new Size(214, 59);
+            label3.TabIndex = 0;
+            label3.Text = "Bem vindo! ";
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(300, 450);
+            Controls.Add(button1);
             Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(textBox2);
@@ -120,6 +150,8 @@
             Name = "Form1";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Form1";
+            panel1.ResumeLayout(false);
+            panel1.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -133,5 +165,7 @@
         private TextBox textBox2;
         private Label label1;
         private Label label2;
+        private Button button1;
+        private Label label3;
     }
 }
