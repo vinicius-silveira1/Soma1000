@@ -28,7 +28,10 @@ namespace SomaLogin
 
                 if (dt.Rows.Count > 0 ) 
                 {
-                    MessageBox.Show("Login concluído");
+                    
+                    Form2 f = new Form2();
+                    f.ShowDialog();
+                    this.Hide();
                     
                 
                 }

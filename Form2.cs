@@ -19,7 +19,17 @@ namespace SomaLogin
 
         private void button1_Click(object sender, EventArgs e)
         {
+            int result = 0;
 
+            for (int i = 1; i <= 1000; i++)
+            {
+                if (i % 2 != 0)
+                {
+                    result += i;
+                }
+            }
+
+            textBox1.Text = result.ToString();
         }
     }
 }
