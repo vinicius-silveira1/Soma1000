@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             panel1 = new Panel();
+            label3 = new Label();
             panel2 = new Panel();
             panel3 = new Panel();
             textBox1 = new TextBox();
@@ -36,7 +37,6 @@
             label1 = new Label();
             label2 = new Label();
             button1 = new Button();
-            label3 = new Label();
             panel1.SuspendLayout();
             SuspendLayout();
             // 
@@ -49,7 +49,17 @@
             panel1.Name = "panel1";
             panel1.Size = new Size(300, 190);
             panel1.TabIndex = 0;
-            panel1.Paint += panel1_Paint;
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Font = new Font("Brush Script MT", 36F, FontStyle.Italic, GraphicsUnit.Point);
+            label3.ForeColor = SystemColors.ControlDarkDark;
+            label3.Location = new Point(43, 79);
+            label3.Name = "label3";
+            label3.Size = new Size(214, 59);
+            label3.TabIndex = 0;
+            label3.Text = "Bem vindo! ";
             // 
             // panel2
             // 
@@ -86,6 +96,7 @@
             textBox2.Name = "textBox2";
             textBox2.Size = new Size(215, 19);
             textBox2.TabIndex = 4;
+            
             // 
             // label1
             // 
@@ -121,17 +132,7 @@
             button1.TabIndex = 7;
             button1.Text = "Entrar";
             button1.UseVisualStyleBackColor = false;
-            // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.Font = new Font("Brush Script MT", 36F, FontStyle.Italic, GraphicsUnit.Point);
-            label3.ForeColor = SystemColors.ControlDarkDark;
-            label3.Location = new Point(43, 79);
-            label3.Name = "label3";
-            label3.Size = new Size(214, 59);
-            label3.TabIndex = 0;
-            label3.Text = "Bem vindo! ";
+            button1.Click += button1_Click;
             // 
             // Form1
             // 
