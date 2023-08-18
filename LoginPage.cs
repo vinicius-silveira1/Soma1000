@@ -3,9 +3,9 @@ using System.Data.SqlClient;
 
 namespace SomaLogin
 {
-    public partial class Form1 : Form
+    public partial class LoginPage : Form
     {
-        public Form1()
+        public LoginPage()
         {
             InitializeComponent();
         }
@@ -34,7 +34,7 @@ namespace SomaLogin
                 {
                     // Caso usuário e senha estejam corretos, abre o segundo forms com o programa de soma
 
-                    Form2 f = new Form2();
+                    Soma f = new Soma();
                     f.ShowDialog();
                     this.Hide();
 

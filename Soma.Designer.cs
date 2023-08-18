@@ -1,6 +1,6 @@
 ﻿namespace SomaLogin
 {
-    partial class Form2
+    partial class Soma
     {
         /// <summary>
         /// Required designer variable.
@@ -74,7 +74,7 @@
             panel1.Size = new Size(284, 190);
             panel1.TabIndex = 3;
             // 
-            // Form2
+            // Soma
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -83,7 +83,7 @@
             Controls.Add(textBox1);
             Controls.Add(button1);
             FormBorderStyle = FormBorderStyle.None;
-            Name = "Form2";
+            Name = "Soma";
             Text = "Form2";
             panel1.ResumeLayout(false);
             ResumeLayout(false);

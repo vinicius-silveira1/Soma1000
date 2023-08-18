@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace SomaLogin
 {
-    public partial class Form2 : Form
+    public partial class Soma : Form
     {
-        public Form2()
+        public Soma()
         {
             InitializeComponent();
         }
