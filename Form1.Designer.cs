@@ -28,8 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             panel1 = new Panel();
-            label3 = new Label();
+            pictureBox1 = new PictureBox();
             panel2 = new Panel();
             panel3 = new Panel();
             textBox1 = new TextBox();
@@ -38,28 +39,28 @@
             label2 = new Label();
             button1 = new Button();
             panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // panel1
             // 
             panel1.BackColor = Color.LightBlue;
-            panel1.Controls.Add(label3);
+            panel1.Controls.Add(pictureBox1);
             panel1.Dock = DockStyle.Top;
             panel1.Location = new Point(0, 0);
             panel1.Name = "panel1";
             panel1.Size = new Size(300, 190);
             panel1.TabIndex = 0;
             // 
-            // label3
+            // pictureBox1
             // 
-            label3.AutoSize = true;
-            label3.Font = new Font("Brush Script MT", 36F, FontStyle.Italic, GraphicsUnit.Point);
-            label3.ForeColor = SystemColors.ControlDarkDark;
-            label3.Location = new Point(43, 79);
-            label3.Name = "label3";
-            label3.Size = new Size(214, 59);
-            label3.TabIndex = 0;
-            label3.Text = "Bem vindo! ";
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(90, 39);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(119, 111);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox1.TabIndex = 1;
+            pictureBox1.TabStop = false;
             // 
             // panel2
             // 
@@ -79,31 +80,31 @@
             // 
             // textBox1
             // 
-            textBox1.BackColor = SystemColors.Control;
+            textBox1.BackColor = SystemColors.ControlLight;
             textBox1.BorderStyle = BorderStyle.None;
             textBox1.Font = new Font("Calibri", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
-            textBox1.Location = new Point(42, 328);
+            textBox1.Location = new Point(42, 317);
             textBox1.Name = "textBox1";
+            textBox1.PasswordChar = '*';
             textBox1.Size = new Size(215, 19);
             textBox1.TabIndex = 3;
             // 
             // textBox2
             // 
-            textBox2.BackColor = SystemColors.Control;
+            textBox2.BackColor = SystemColors.ControlLight;
             textBox2.BorderStyle = BorderStyle.None;
             textBox2.Font = new Font("Calibri", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
-            textBox2.Location = new Point(42, 246);
+            textBox2.Location = new Point(42, 257);
             textBox2.Name = "textBox2";
             textBox2.Size = new Size(215, 19);
             textBox2.TabIndex = 4;
-            
             // 
             // label1
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Calibri", 12F, FontStyle.Regular, GraphicsUnit.Point);
             label1.ForeColor = SystemColors.ControlDarkDark;
-            label1.Location = new Point(42, 228);
+            label1.Location = new Point(42, 235);
             label1.Name = "label1";
             label1.Size = new Size(59, 19);
             label1.TabIndex = 5;
@@ -114,7 +115,7 @@
             label2.AutoSize = true;
             label2.Font = new Font("Calibri", 12F, FontStyle.Regular, GraphicsUnit.Point);
             label2.ForeColor = SystemColors.ControlDarkDark;
-            label2.Location = new Point(42, 310);
+            label2.Location = new Point(42, 295);
             label2.Name = "label2";
             label2.Size = new Size(48, 19);
             label2.TabIndex = 6;
@@ -152,7 +153,7 @@
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Form1";
             panel1.ResumeLayout(false);
-            panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -167,6 +168,6 @@
         private Label label1;
         private Label label2;
         private Button button1;
-        private Label label3;
+        private PictureBox pictureBox1;
     }
 }
