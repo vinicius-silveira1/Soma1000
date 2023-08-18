@@ -31,7 +31,7 @@ namespace SomaLogin
                     result += i;
                 }
             }
-            // Convertendo o resultado para uma String para que posso ser mostrado na textBox
+            // Convertendo o resultado para uma String para que possa ser mostrado na textBox
             textBox1.Text = result.ToString();
         }
 
